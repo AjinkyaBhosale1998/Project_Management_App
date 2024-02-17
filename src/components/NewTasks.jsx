@@ -17,7 +17,7 @@ const NewTasks = ({ onAdd }) => {
       <input
         type="text"
         className="w-64 px-2 py-1 rounded-sm bg-stone-200"
-        onChange={handleChange}  {/* Fix the comment syntax here */}
+        onChange={handleChange}
         value={enteredTask}
       />
       <button className="text-stone-800 mb-4" onClick={handleClick}>

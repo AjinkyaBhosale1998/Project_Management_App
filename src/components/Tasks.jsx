@@ -29,14 +29,14 @@ const Tasks = () => {
           />
           <button
             type="button"
-            className="text-stone-800 ml-2"
+            className="mx-5 px-3 py-1 rounded-md bg-stone-800 text-stone-50 hover:text-stone-400"
             onClick={handleAddTask}
           >
             Add
           </button>
           <button
             type="button"
-            className="text-stone-800 ml-2"
+            className="px-3 py-1 rounded-md bg-stone-800 text-stone-50 hover:text-stone-400"
             onClick={handleClearTasks}
           >
             Clear

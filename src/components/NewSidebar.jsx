@@ -12,10 +12,8 @@ const NewSidebar = ({ onStartedAddProject, projects, onSelectProject, selectedPr
       </div>
       <ul className="mt-8">
         {projects.map((project) => {
-          // Initialize cssClasses here
           let cssClasses = '';
 
-          // Conditional rendering for styling
           if (project.id === selectedProjectId) {
             cssClasses += 'bg-stone-800 text-stone-200';
           } else {
