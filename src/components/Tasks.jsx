@@ -19,24 +19,24 @@ const Tasks = () => {
     <section>
       <h2 className="text-2xl font-bold text-stone-700 mb-4">Tasks</h2>
       <div>
-        <p className="text-stone-800 mb-4">NEW TASK</p>
+        <p className="text-stone-800 mb-4">New Task</p>
         <form onSubmit={(e) => e.preventDefault()}>
           <input
             type="text"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
-            className="w-64 px-2 py-1 rounded-sm bg-stone-200"
+            className="w-64 px-3 py-2 rounded-md bg-stone-200 border border-stone-300 focus:outline-none focus:ring focus:border-blue-300"
           />
           <button
             type="button"
-            className="mx-5 px-3 py-1 rounded-md bg-stone-800 text-stone-50 hover:text-stone-400"
+            className="mx-5 px-4 py-2 rounded-md bg-stone-800 text-stone-50 hover:text-stone-400"
             onClick={handleAddTask}
           >
             Add
           </button>
           <button
             type="button"
-            className="px-3 py-1 rounded-md bg-stone-800 text-stone-50 hover:text-stone-400"
+            className="px-3 py-2 rounded-md bg-stone-800 text-stone-50 hover:text-stone-400"
             onClick={handleClearTasks}
           >
             Clear
